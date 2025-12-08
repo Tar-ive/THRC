@@ -12,4 +12,9 @@
 
 - 2017_2022_DCI.ipynb: This notebook loads and processes BRFSS (SMART) and MEFI datasets for 2017 and 2022, standardizing geographical codes, resolving inconsistencies, and merging them to enrich the BRFSS data with MEFI scores and population information. The refined data is then saved into clean, semi-clean, and full output files for further analysis.
 
-
+## General Tips While Working with these Data Sources: 
+1. Always load and save files with google colab directly. Helps with version tracking of files.
+2. Most likely cause of issues are the changing MSA and ZCTA numbers and a clear governmental data on how many years should have how many ZCTAs and MSAs, so look through [https://www.census.gov/data/tables/time-series/demo/popest/2020s-total-metro-and-micro-statistical-areas.html] or data.gov resources only. 
+3. Most cells already have outputs, study them, understand what good bad output looks like before rerunning them.
+4. Precision edits will be required for the data dictionary even after programatic generation, refer to previous versions of data dictionary for reference. 
+5. Notebook files have a lot of code in general (most of that is debugging as building code cells and are redundant) refer to the bottom of notebooks or ctrl+F to find the required data file names for eg : msa_spatial_{year}_v{n}.csv, see which cell's outputs save these files and work from there onwards.
