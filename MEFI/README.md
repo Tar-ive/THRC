@@ -7,7 +7,7 @@
 
 - maps.ipynb : After aggregating dataset confirm that they have approx ~28,000 or more ZCTAs or as described by the supervisor, then use the same** msa_spatial_{year}_v{n}.csv file from MEFI-DCI.ipynb** here in order to create HTML maps. You will need to download these maps to the device or write specific functions to render these maps in the notebook itself. Mention to the supervisor that this is an important way to figure data out visually as the aggregate dataset has ~1.1 million rows.
 
-# IF Persistant Errors with Above Notebooks, Use these Notebooks to get deepdive into Data Composition and for Root Level Analysis 
+##  IF Persistant Errors with Above Notebooks, Use these Notebooks to get deepdive into Data Composition and for Root Level Analysis 
 - MEFI (1).ipynb : **(Only use in case of top 3 files having errors which need deeper level investigation)** -> This notebook processes BRFSS data from various years, standardizing and mapping it to current CBSA codes, and then enriches this information with MEFI scores and population figures. This complex mapping process ensures accurate linking of older BRFSS data to current metropolitan area classifications and MEFI scores, particularly for years **2007, 2008, and 2012.**
 
 - 2017_2022_DCI.ipynb: This notebook loads and processes BRFSS (SMART) and MEFI datasets for 2017 and 2022, standardizing geographical codes, resolving inconsistencies, and merging them to enrich the BRFSS data with MEFI scores and population information. The refined data is then saved into clean, semi-clean, and full output files for further analysis.
